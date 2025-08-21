@@ -1,5 +1,5 @@
 var homepage = (req,res)=>{
-    res.render('index',{title:'Santhosh-23EG107E01'});
+    res.render('index',{title:'WPM INTERNAL -1'});
 };
 
 var location = (req,res)=>{

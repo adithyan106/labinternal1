@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var ctrllocation = require('../controllers/location');
-var ctrlothers = require('../controllers/other');
+var ctrlother = require('../controllers/other');
 
 router.get('/',ctrllocation.homepage);
 router.get('/location',ctrllocation.location);
