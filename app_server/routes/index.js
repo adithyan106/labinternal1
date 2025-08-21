@@ -1,9 +1,11 @@
-const express = require('express');
-const router = express.Router();
+var express = require('express');
+var router = express.Router();
+var ctrllocation = require('../controllers/location');
+var ctrlothers = require('../controllers/others');
 
-const ctrlMain = require('../controllers/main');
-
-
-router.get('/', ctrlMain.index);
+router.get('/',ctrllocation.homepage);
+router.get('/location',ctrllocation.location);
+router.get('/location/review',ctrllocation.reviewpage);
+router.get('/location/about',ctrlothers.about);
 
 module.exports = router;
